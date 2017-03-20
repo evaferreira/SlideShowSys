@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Here goes your title</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/neon.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+  
+</head>
+
+<!-- How long is your talk? -->
+<body data-duration="40" id="timer-line">
+  <div class="deck-container">
+
+
+    <section class="slide presentation">
+		<h1>Super Duper title</h1>
+    </section>
+
+	
+	<section class="slide">
+      <h2>Here goes the sun</h2>
+	  <ol>
+			<li>Turu
+				<ul>
+					<li>Ruru</li>
+					<li>Rhythm</li>
+					<li>Yeah</li>
+				</ul>
+			</li>
+			<li>Kittens</li>
+			<li>Are better than dogs
+				<ul>
+					<li>Self-washing machines</li>
+					<li>Smaller</li>
+				</ul>
+			</li>
+			<li class="slide">Cuter!</li>
+	  </ol>
+	</section>
+
+	<section class="slide">
+		<h2>Here's some code!</h2>
+		<code>
+			<pre>
+			@keyframes name{
+				from{
+					background-color: Tomato;
+				}
+				to{
+					background-color: Azure;
+				}
+			}
+			</pre>
+		</code>
+	</section>
+	
+	
+	<section class="slide demo">
+		<h2>Here's a demo!</h2>
+		<iframe src="demos/potter_opacity.html"></iframe>
+	</section>
+	
+	
+	<section class="slide">
+      <h2>Tables</h2>
+	  <table>
+		<tr>
+			<td colspan="3">Speed Approximate Conversion Table</td>
+		</tr>
+		<tr>
+			<td>km/h</td>
+			<td>mi/h</td>
+			<td>m/s</td>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td>12</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>40</td>
+			<td>25</td>
+			<td>11</td>
+		</tr>
+		<tr>
+			<td>60</td>
+			<td>37</td>
+			<td>17</td>
+		</tr>
+		<tr>
+			<td>80</td>
+			<td>50</td>
+			<td>22</td>
+		</tr>
+		<tr>
+			<td>100</td>
+			<td>62</td>
+			<td>28</td>
+		</tr>
+	  </table>
+	</section>
+	
+	<section class="slide incomplete">
+      <h2>Incomplete slide</h2>
+	</section>
+	
+	<section class="slide charte expl">
+      <h2>Chart JS for charts :D</h2>
+	  <div>
+			<iframe src="charts/gravity.html"></iframe>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<h2>Thank you!</h2>
+		<ul>
+			<li><a href="https://twitter.com/completeThisLink" target="blank">@your twitter username</a></li>
+			<li>(:</li>
+		</ul>
+	</section>
+		
+	
+	
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files for deck.js -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Write your JS in the following file -->
+<script src="my.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+.chart{
+	width: 570px;
+	margin: auto;
+}
+.label{
+	color: #eee;
+	font-size: 1.6em;
+	font-family: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif";
+	text-align: center;
+}
+.vertical{
+	transform-origin: bottom left;
+	transform: rotate(-90deg);
+	text-align: center;
+	position: relative;
+	top: 480px;
+	left: -3%;
+}

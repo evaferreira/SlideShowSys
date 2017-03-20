@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Gravity acceleration</title>
+		<script src="chart.js"></script>
+		<link href="chart.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="chart">
+			<div>
+				<div class="label vertical">Speed (m/s)</div>
+				<canvas id="free_fall" height="450" width="570"></canvas>
+				<div class="label horizontal">Time (s)</div>
+			</div>
+		</div>
+
+
+	<script>
+		var lineChartData = {
+			labels : ["0s","1s","2s","3s","4s","5s","6s","7s","8s","9s","10s"],
+			datasets : [
+				{
+					label: "Time/Speed",
+					fillColor : "rgba(170,255,0,0.6)",
+					strokeColor : "rgba(220,220,220,8)",
+					pointColor : "rgba(20,20,20,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(220,220,220,1)",
+					data: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90 ,100]
+				}
+			]
+
+		}
+
+	window.onload = function(){
+		var ctx = document.getElementById("free_fall").getContext("2d");
+		window.myLine = new Chart(ctx).Line(lineChartData, {
+			responsive: true
+		});
+	}
+
+
+	</script>
+	</body>
+</html>
