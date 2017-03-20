@@ -27,6 +27,6 @@ Because... the code is a mess.
 
 My work basically consisted on making those a salad.
 
-Talks run on my machine and I make sure they do not need Internet conexion; and sadly that leads to being messy with the making-of the talks because, after all, I care more about the content than the code quality.
+Talks run on my machine and I make sure they do not need Internet connection; and sadly that leads to being messy with the making-of the talks because, after all, I care more about the content than the code quality.
 
 So definitely, if you see anything that could be improved (yeah, almost everything), just help me with this repo and let's make this less-messy for everyone!
