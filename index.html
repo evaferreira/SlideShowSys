@@ -28,6 +28,13 @@
 
   <!-- Required Modernizr file -->
   <script src="modernizr.custom.js"></script>
+	
+	<!-- Resize iframes, for demos :) -->
+	<script language="javascript" type="text/javascript">
+	  function resizeIframe(obj) {
+			obj.style.height = obj.contentWindow.document.body.scrollHeight + 50 + 'px';
+	  }
+	</script>
   
 </head>
 
@@ -66,14 +73,14 @@
 		<h2>Here's some code!</h2>
 		<code>
 			<pre>
-			@keyframes name{
-				from{
-					background-color: Tomato;
-				}
-				to{
-					background-color: Azure;
-				}
-			}
+	@keyframes name{
+		from{
+			background-color: Tomato;
+		}
+		to{
+			background-color: Azure;
+		}
+	}
 			</pre>
 		</code>
 	</section>
@@ -81,7 +88,7 @@
 	
 	<section class="slide demo">
 		<h2>Here's a demo!</h2>
-		<iframe src="demos/potter_opacity.html"></iframe>
+		<iframe src="demos/potter_opacity.html" onload="resizeIframe(this)"></iframe>
 	</section>
 	
 	

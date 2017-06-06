@@ -4,49 +4,29 @@ body{
 	font-size: 2em;
 	font-family: Arial;
 }
+
 .slide{
-	width: 1250px;
 	margin: 0 auto;
+	display: flex;
 }
-.steps{
-	display: block;
-	margin: auto;
-}
+
 textarea{
-	width: 1190px;
-	height: 387px;
+	width: 100%;
+	max-width: 1000px;
+	height: 380px;
+	max-height: 750px;
 	font-size: 1em!important;
-	margin-top: 30px;
 	background: #EFEFEF;
 }
+
 #indicator{
 	display: none;
 }
-.anim1, .anim2{
-	width: 300px;
-	height: 300px;
-}
-.right{
-	float: right;
-	width: 42%;
-}
-.right.svg{
-	width: 30%;
-	margin-top: 50px;
-}
-.left{
-	float: left; 
-	width: 55%;
-}
-.example .left{
-	width: 65%;
-}
-.right.p{
-	width: 33%;
-}
+
 .potter{
 	background-image: url("../img/potter/head.png");
 	background-repeat: no-repeat;
 	height: 640px;
 }
 .cloak{ height: 680px; }
+
