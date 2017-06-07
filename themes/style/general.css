@@ -1,0 +1,87 @@
+/*------------------------------------*\
+  # Timer
+\*------------------------------------*/
+#timer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  width: 0%;
+  height: 4px;
+  background: skyblue;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: linear;
+}
+#timer.end {
+  width: 100%;
+}
+#timer.end.overtime {
+  width: 0%;
+  left: auto;
+  right: 0;
+}
+
+
+
+
+
+/*------------------------------------*\
+  # Important stuff
+\*------------------------------------*/
+.slide.important {
+  padding-top: 15%;
+  text-align: center;
+  font-size: 1.2em;
+}
+.slide.important img {
+  position: absolute;
+  top: 33%;
+  left: 12%;
+}
+.slide.important h2 {
+  margin-bottom: 0.2em;
+}
+
+.demo iframe {
+  width: 95%;
+  height: 760px;
+  margin: auto;
+}
+
+.demo.esp iframe {
+  height: 500px;
+}
+
+
+
+
+
+/*------------------------------------*\
+  # More general styles
+\*------------------------------------*/
+.hey {
+  font-style: italic;
+}
+
+.incomplete:after {
+  content: 'INCOMPLETE';
+  font-weight: bold;
+  position: absolute;
+  top: 12%;
+  left: 75%;
+  padding: .1em .4em 0;
+  border: .1em solid;
+  color: red;
+  font-size: 140%;
+  border-radius: .2em;
+  transform: rotate(30deg);
+}
+.img-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-center img{
+    max-width: 100%;
+}
